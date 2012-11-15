@@ -37,6 +37,6 @@ do
 	title=`echo "$titles" | sed -n "$songid"p`
 	echo "[-] Downloading $title..."
 	url=`echo "$songs" | sed -n "$songid"p`;
-	wget -c -q --user-agent='Mozilla/5.0' -O "$title.mp3" $url;
+	wget -c --user-agent='Mozilla/5.0' -O "$title.mp3" $url;
 done
 done
